@@ -1,0 +1,24 @@
+// global variables
+$global-variables: (
+  primary-margin: 200px,
+);
+
+// light theme variables
+$light-theme: (
+  primary-color: #eee,
+);
+
+// dark theme variables
+$dark-theme: (
+  primary-color: #111,
+);
+
+// sass variables to use instead of css variables globally
+$primary-margin: var(--primary-margin);
+
+// mixin to make css variables from sass map
+@mixin css-variables($map: $global-variables) {
+  @each $custon-property, $value in $map {
+    --#{$custon-property}: #{$value};
+  }
+}

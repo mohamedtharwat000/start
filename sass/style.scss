@@ -1,0 +1,11 @@
+@use "variables" as *;
+@use "root";
+@use "reset";
+
+.sr-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: none;
+  overflow: hidden;
+}

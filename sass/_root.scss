@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+/* css global variables */
+:root {
+  @include css-variables($global-variables);
+}
+
+/* css light theme */
+:root {
+  @include css-variables($light-theme);
+}
+
+/* css dark theme */
+:root {
+  @media (prefers-color-scheme: dark) {
+    @include css-variables($dark-theme);
+  }
+}
+
+/* js light theme */
+[data-theme="light"] {
+  @include css-variables($light-theme);
+}
+
+/* js dark theme */
+[data-theme="dark"] {
+  @include css-variables($dark-theme);
+}

@@ -1,0 +1,92 @@
+/* css global variables */
+:root {
+  --primary-margin: 200px;
+}
+
+/* css light theme */
+:root {
+  --primary-color: #eee;
+}
+
+/* css dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #111;
+  }
+}
+
+/* js light theme */
+[data-theme=light] {
+  --primary-color: #eee;
+}
+
+/* js dark theme */
+[data-theme=dark] {
+  --primary-color: #111;
+}
+
+/*
+// css reset
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: calc(1em + 0.5rem);
+}
+
+img,
+picture,
+audio,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: transparent;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: none;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
